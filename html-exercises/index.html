@@ -1,147 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignments</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #ecf0f1;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+      color: #f3f4f6;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 50px;
-            background: linear-gradient(135deg, #00d4ff, #0099ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.8rem;
+      color: #f9fafb;
+      text-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+    }
 
-        .section {
-            margin-bottom: 60px;
-        }
+    .section {
+      margin-bottom: 60px;
+    }
 
-        .section h2 {
-            font-size: 1.8em;
-            margin-bottom: 30px;
-            color: #00d4ff;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #00d4ff;
-        }
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #60a5fa;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #60a5fa;
+    }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 15px;
-        }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 12px;
+    }
 
-        .btn {
-            padding: 15px 20px;
-            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-            border: 2px solid #00d4ff;
-            color: #ecf0f1;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.95em;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 50px;
-        }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 55px;
+      text-decoration: none;
+      color: #f3f4f6;
+      background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+      border: 2px solid #374151;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
 
-        .btn:hover {
-            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
-            color: #0f3460;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-            transform: translateY(-2px);
-        }
+    .btn:hover {
+      background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+      border-color: #60a5fa;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+    }
 
-        .btn:active {
-            transform: translateY(0);
-        }
+    .btn:active {
+      transform: translateY(-1px);
+    }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-            .section h2 {
-                font-size: 1.4em;
-            }
+      .section-title {
+        font-size: 1.4rem;
+      }
 
-            .grid {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-                gap: 10px;
-            }
+      .grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+      }
 
-            .btn {
-                padding: 12px 15px;
-                font-size: 0.85em;
-            }
-        }
-    </style>
+      .btn {
+        min-height: 48px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Assignments: Your Name Surname</h1>
+  <div class="container">
+    <h1>Assignments: M1lvin</h1>
 
-        <div class="section">
-            <h2>Section 1</h2>
-            <div class="grid">
-                <a href="section1/assignment1.html" class="btn">Assignment 1</a>
-                <a href="section1/assignment2.html" class="btn">Assignment 2</a>
-                <a href="section1/assignment3.html" class="btn">Assignment 3</a>
-                <a href="section1/assignment4.html" class="btn">Assignment 4</a>
-                <a href="section1/assignment5.html" class="btn">Assignment 5</a>
-                <a href="section1/assignment6.html" class="btn">Assignment 6</a>
-                <a href="section1/assignment7.html" class="btn">Assignment 7</a>
-                <a href="section1/assignment8.html" class="btn">Assignment 8</a>
-                <a href="section1/assignment9.html" class="btn">Assignment 9</a>
-                <a href="section1/assignment10.html" class="btn">Assignment 10</a>
-                <a href="section1/assignment11.html" class="btn">Assignment 11</a>
-                <a href="section1/assignment12.html" class="btn">Assignment 12</a>
-                <a href="section1/assignment13.html" class="btn">Assignment 13</a>
-                <a href="section1/assignment14.html" class="btn">Assignment 14</a>
-                <a href="section1/assignment15.html" class="btn">Assignment 15</a>
-                <a href="section1/assignment16.html" class="btn">Assignment 16</a>
-                <a href="section1/assignment17.html" class="btn">Assignment 17</a>
-                <a href="section1/assignment18.html" class="btn">Assignment 18</a>
-                <a href="section1/assignment19.html" class="btn">Assignment 19</a>
-                <a href="section1/assignment20.html" class="btn">Assignment 20</a>
-            </div>
-        </div>
+    <section class="section">
+      <h2 class="section-title">Section 1</h2>
+      <div class="grid">
+        <a class="btn" href="section1/assignment1.html">Assignment 1</a>
+        <a class="btn" href="section1/assignment2.html">Assignment 2</a>
+        <a class="btn" href="section1/assignment3.html">Assignment 3</a>
+        <a class="btn" href="section1/assignment4.html">Assignment 4</a>
+        <a class="btn" href="section1/assignment5.html">Assignment 5</a>
+        <a class="btn" href="section1/assignment6.html">Assignment 6</a>
+        <a class="btn" href="section1/assignment7.html">Assignment 7</a>
+        <a class="btn" href="section1/assignment8.html">Assignment 8</a>
+        <a class="btn" href="section1/assignment9.html">Assignment 9</a>
+        <a class="btn" href="section1/assignment10.html">Assignment 10</a>
+        <a class="btn" href="section1/assignment11.html">Assignment 11</a>
+        <a class="btn" href="section1/assignment12.html">Assignment 12</a>
+        <a class="btn" href="section1/assignment13.html">Assignment 13</a>
+        <a class="btn" href="section1/assignment14.html">Assignment 14</a>
+        <a class="btn" href="section1/assignment15.html">Assignment 15</a>
+        <a class="btn" href="section1/assignment16.html">Assignment 16</a>
+        <a class="btn" href="section1/assignment17.html">Assignment 17</a>
+        <a class="btn" href="section1/assignment18.html">Assignment 18</a>
+        <a class="btn" href="section1/assignment19.html">Assignment 19</a>
+        <a class="btn" href="section1/assignment20.html">Assignment 20</a>
+      </div>
+    </section>
 
-        <div class="section">
-            <h2>Section 2</h2>
-            <div class="grid">
-                <a href="section2/assignment1.html" class="btn">Assignment 1</a>
-                <a href="section2/assignment2.html" class="btn">Assignment 2</a>
-                <a href="section2/assignment3.html" class="btn">Assignment 3</a>
-                <a href="section2/assignment4.html" class="btn">Assignment 4</a>
-                <a href="section2/assignment5.html" class="btn">Assignment 5</a>
-            </div>
-        </div>
-    </div>
+    <section class="section">
+      <h2 class="section-title">Section 2</h2>
+      <div class="grid">
+        <a class="btn" href="section2/assignment1.html">Assignment 1</a>
+        <a class="btn" href="section2/assignment2.html">Assignment 2</a>
+        <a class="btn" href="section2/assignment3.html">Assignment 3</a>
+        <a class="btn" href="section2/assignment4.html">Assignment 4</a>
+        <a class="btn" href="section2/assignment5.html">Assignment 5</a>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
